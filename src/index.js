@@ -12,7 +12,17 @@ const onClickadd = () => {
   //liタグ生成
   const li = document.createElement("li");
   li.innerText = inputText;
+
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+
   div.appendChild(li);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
+
   document.getElementById("incomplete-list").appendChild(div);
 };
 
